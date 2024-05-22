@@ -1,0 +1,20 @@
+<div class="container m-2">
+   <div class="d-flex align-items-center justify-content-center m-4 font-weight-bold">Add Story</div>
+
+  <form [formGroup]="objAddStoryForm">
+    <div class="form-field-pd mb-4">
+      <label for="">Story Name</label>
+      <input type="text" class="form-control" formControlName="strStory">
+
+    </div>
+    <div class="form-field-pd mb-4">
+      <label for="">Story Point</label>
+      <input type="number" class="form-control" formControlName="intPoint">
+
+    </div>
+    <div class="d-flex justify-content-center mb-4">
+        <button class="btn btn-primary" (click)="addStory()">ADD STORY</button>
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,32 @@
+<h2 class="col-sm-12">Sprint Planner</h2>
+<div class="col-sm-12 mt-2 d-flex justify-content-evenly row">
+  <div class="card col-sm-5 mt-4">
+    <!-- add story form -->
+    <app-add-story-form-p (objPresentationEvent)="eventFromAddStoryFormP($event)">
+
+    </app-add-story-form-p>
+  </div>
+  <div class="card col-sm-5 mt-4">
+    <!-- story list -->
+    <app-story-list-p [arrListStories]="arrListStories">
+
+    </app-story-list-p>
+  </div>
+  <div class="card col-sm-5 mt-4">
+    <!-- sprint calculator -->
+    <app-sprint-calculator-p [arrListStories]="arrListStories" (objPresentationEvent)="eventFromCalculatorP($event)">
+
+    </app-sprint-calculator-p>
+
+  </div>
+  <div class="card col-sm-5 mt-4">
+    <!-- selected sprint  -->
+    <app-selected-sprint-p [arrSprintSelected]="arrSprintSelected" (objPresentationEvent)="eventFromCalculatorP($event)">
+
+    </app-selected-sprint-p>
+
+  </div>
+
+</div>
+<div>
+</div>
